@@ -1,0 +1,109 @@
+.course-buttons {
+  display: flex;
+  justify-content: end;
+}
+
+button, select {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid gray;
+}
+
+.wd-modules,
+.wd-modules * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.red-button {
+  background-color: red;
+  color: lightgray;
+}
+
+.green-button {
+  background-color: rgb(74, 129, 74);
+  color: lightgray
+}
+
+.wd-modules {
+  margin: 5px;
+}
+
+.wd-modules li {
+  list-style: none;
+}
+
+.wd-modules > li {
+  margin-bottom: 48px;
+}
+
+.wd-modules .module-item {
+  padding: 10px 8px;
+  border: 1px solid gray;
+}
+
+.wd-modules .module-item.module-title {
+  background-color: #f5f5f5;
+}
+
+.wd-modules .module-item a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-modules .module-item .indent {
+  margin-right: 32px;
+}
+
+.fa-link {
+  color: green;
+}
+
+.course-status {
+  width: 240px;
+  margin-left: 48px;
+}
+
+.course-status ul {
+  padding-left: 0;
+}
+
+.course-status li {
+  background-color: #f5f5f5;
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 2px 0;
+  list-style: none;
+}
+
+.course-status li a {
+  text-decoration: none;
+  color: black;
+}
+
+.coming-up {
+  margin-left: 48px;
+}
+
+.coming-up .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coming-up .title a {
+  text-decoration: none;
+  color: red;
+}
+
+.coming-up li a {
+  color: red;
+  text-decoration: none;
+}
+
+.coming-up li div {
+  color: gray;
+  font-size: 12px;
+  margin: 5px 0;
+}

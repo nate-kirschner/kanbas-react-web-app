@@ -1,0 +1,14 @@
+.dashboard {
+  padding: 48px;
+}
+
+.dashboard .courses-grid {
+  display: flex;
+  row-gap: 36px;
+  column-gap: 36px;
+  flex-wrap: wrap;
+}
+
+.dashboard .courses-grid .card {
+  width: 300px;
+}

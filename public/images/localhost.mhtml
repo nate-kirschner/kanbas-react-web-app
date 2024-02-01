@@ -1,0 +1,137 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://localhost:3000/Kanbas/Courses/Navigation/#
+Subject: 
+Date: Wed, 31 Jan 2024 19:59:40 -0500
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--FwpEbbFP9Oz6fYhdGT96UvRUgORWnuEXaGomMqX678----"
+
+
+------MultipartBoundary--FwpEbbFP9Oz6fYhdGT96UvRUgORWnuEXaGomMqX678----
+Content-Type: text/html
+Content-ID: <frame-E4C363F5943FF111535847BF98E2E624@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:3000/Kanbas/Courses/Navigation/#
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8">
+    <link rel=3D"stylesheet" href=3D"http://localhost:3000/Kanbas/styles.cs=
+s">
+    <link rel=3D"stylesheet" href=3D"http://localhost:3000/Kanbas/Courses/N=
+avigation/index.css">
+  </head>
+
+  <body>
+
+
+    <ul class=3D"wd-navigation">
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Home/screen.html">
+          Home</a>
+      </li>
+      <li class=3D"wd-active">
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Modules</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Piazza</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Zoom Meetings</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Assignments/screen.=
+html">
+          Assignments</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Quizzes</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Grades/screen.html"=
+>
+          Grades</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          People</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Panopto Video</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Discussions</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Announcements</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Pages</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Files</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Rubrics</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Outcomes</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Collaboration</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Syllabus</a>
+      </li>
+      <li>
+        <a href=3D"http://localhost:3000/Kanbas/Courses/Navigation/#">
+          Settings</a>
+      </li>
+    </ul>
+ =20
+
+</body></html>
+------MultipartBoundary--FwpEbbFP9Oz6fYhdGT96UvRUgORWnuEXaGomMqX678----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:3000/Kanbas/styles.css
+
+@charset "utf-8";
+
+body { margin: 0px; padding: 0px; }
+
+body * { font-family: Arial, Helvetica, sans-serif; }
+
+body > table { height: 100%; width: 100%; }
+------MultipartBoundary--FwpEbbFP9Oz6fYhdGT96UvRUgORWnuEXaGomMqX678----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://localhost:3000/Kanbas/Courses/Navigation/index.css
+
+@charset "utf-8";
+
+.wd-navigation { background-color: white; list-style: none; padding: 0px; w=
+idth: 125px; margin: 0px 0px 0px 20px; }
+
+.wd-navigation li { padding-left: 10px; margin-bottom: 10px; margin-top: 10=
+px; padding-top: 10px; padding-bottom: 10px; }
+
+.wd-navigation li.wd-active { border-left: 2px solid black; }
+
+.wd-navigation li.wd-active a { color: black; }
+
+.wd-navigation a { color: red; text-decoration: none; }
+------MultipartBoundary--FwpEbbFP9Oz6fYhdGT96UvRUgORWnuEXaGomMqX678------
