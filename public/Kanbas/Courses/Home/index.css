@@ -107,3 +107,47 @@ button, select {
   font-size: 12px;
   margin: 5px 0;
 }
+
+.dashboard {
+  flex-wrap: wrap;
+}
+
+.top-nav-bar {
+  width: 100%;
+  height: 48px;
+  background-color: black;
+}
+
+.top-nav-bar > div {
+  justify-content: space-between;
+  margin: 0 16px;
+  align-items: center;
+  height: 100%;
+}
+
+.fa-bars, .fa-caret-down, .course-title {
+  color: white
+}
+
+
+
+.multi-collapse {
+  width: 100%;
+  height: max-content;
+  background-color: white;
+  position: absolute;
+  margin: 0;
+}
+
+.multi-collapse .wd-kanbas-navigation {
+  background-color: white;
+}
+
+
+
+.multi-collapse .wd-kanbas-navigation a {
+  display: flex;
+  column-gap: 10px;
+  color: red;
+
+}
