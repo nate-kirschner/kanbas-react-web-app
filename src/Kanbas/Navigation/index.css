@@ -1,0 +1,92 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;  
+  width: 80px;
+  height: 100%;
+  min-height: 100vh;
+
+  @media (max-width: 768px) {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 80px;
+  }
+}
+
+.wd-kanbas-navigation li {
+  font-size: 0.8em;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a, .wd-kanbas-navigation .fs-2 {
+  color: #d51a2c;
+  display: block;
+  margin: auto;
+
+  @media (max-width: 768px) {
+    display: inline;
+  }
+}
+
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+
+  @media (max-width: 768px) {
+    color: #d51a2c;
+  }
+}
+
+#account {
+  color: gray;
+}
+
+.topbar-nav {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  margin-bottom: 36px;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.topbar-nav .titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topbar-nav .titles:hover {
+  text-decoration: underline;
+}
+
+.topbar-nav svg {
+  margin: 0 20px;
+}
+
+.kanbas-menu, .courses-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 80px;
+  left: 0;
+  z-index: 100;
+}
+
+.courses-menu {
+  height: max-content;
+  box-shadow: 0 0.375rem 0.4375rem rgba(0,0,0,.1), 0 0.625rem 1.75rem rgba(0,0,0,.25);
+}

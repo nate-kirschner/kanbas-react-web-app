@@ -1,0 +1,52 @@
+.courses-home {
+  display: flex;  
+  flex-wrap: nowrap;
+}
+
+.course-status {
+  width: 240px;
+  margin-left: 48px;
+}
+
+.course-status ul {
+  padding-left: 0;
+}
+
+.course-status li {
+  background-color: #f5f5f5;
+  border: 1px solid #c7cdd1;
+  border-radius: 3px;
+  padding: 8px 14px;
+  margin: 2px 0;
+  list-style: none;
+}
+
+.course-status li a {
+  text-decoration: none;
+  color: black;
+}
+
+.coming-up {
+  margin-left: 48px;
+}
+
+.coming-up .title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coming-up .title a {
+  text-decoration: none;
+  color: red;
+}
+
+.coming-up li a {
+  color: red;
+  text-decoration: none;
+}
+
+.coming-up li div {
+  color: gray;
+  font-size: 12px;
+  margin: 5px 0;
+}

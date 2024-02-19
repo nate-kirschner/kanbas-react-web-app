@@ -1,0 +1,20 @@
+
+.assignments .button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.assignments .button-row input {
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+}
+
+.assignments .button-group {
+  display: flex;
+  column-gap: 5px;
+}
+
+.assignments a {
+  text-decoration: none;
+  color: black;
+}
