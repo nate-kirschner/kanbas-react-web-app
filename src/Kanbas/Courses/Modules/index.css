@@ -32,6 +32,11 @@
   background-color: #f5f5f5;
 }
 
+.wd-modules .header > div {
+  display: flex;
+  align-items: center;
+}
+
 .wd-modules .item {
   border: 1px solid #c7cdd1;
   padding: 20px 6px;
@@ -42,6 +47,23 @@
 .wd-modules .header .icons {
   display: flex;
   column-gap: 10px;
+  align-items: center;
+}
+
+.wd-modules .header .icons .delete, .wd-modules .header .icons .edit {
+  border: 1px solid #c7cdd1;
+  
+  color: white;
+  border-radius: 8px;
+  padding: 4px 8px;
+}
+
+.wd-modules .header .icons .delete {
+  background-color: #d51a2c;
+}
+
+.wd-modules .header .icons .edit {
+  background-color: green;
 }
 
 .wd-modules ul {
@@ -49,3 +71,35 @@
   padding: 0;
 }
 
+.new-module-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.new-module-form input, .new-module-form textarea {
+  padding: 4px;
+  border: 1px solid #c7cdd1;
+}
+
+.new-module-form button {
+  border: 1px solid #c7cdd1;
+  
+  color: white;
+  width: max-content;
+  padding: 4px 16px;
+  border-radius: 8px;
+}
+
+.new-module-form > div {
+  display: flex;
+  column-gap: 16px;
+}
+
+.new-module-form .add {
+  background-color: green;
+}
+
+.new-module-form .update {
+  background-color: blue;
+}

@@ -11,3 +11,17 @@
   box-shadow: 0 4px 10px rgba(0,0,0,.35);
 }
 
+.courses-buttons {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.courses-buttons button {
+  border: none;
+  background-color: transparent;
+}
+
+.courses-buttons button:hover {
+  text-decoration: underline;
+}
