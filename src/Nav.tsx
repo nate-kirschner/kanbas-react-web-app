@@ -10,7 +10,10 @@ function Nav() {
       >
         A3
       </Link>
-      <Link className="nav-link" to="/Labs/a4">
+      <Link
+        to="/Labs/a4"
+        className={`nav-link ${pathname.includes("a4") ? "active" : ""}`}
+      >
         A4
       </Link>
       <Link
