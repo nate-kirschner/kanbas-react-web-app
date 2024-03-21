@@ -4,13 +4,22 @@ import Dashboard, { CourseType } from "./Dashboard";
 import Courses from "./Courses";
 import TopBarNav from "./Navigation/TopBarNav";
 import "./index.css";
-import { courses as initialCourses } from "./Database";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Provider } from "react-redux";
 import store from "./store";
+import axios from "axios";
 
 function Kanbas() {
-  const [courses, setCourses] = useState<CourseType[]>(initialCourses);
+  const [courses, setCourses] = useState<CourseType[]>([]);
+  const COURSES_API = "http://localhost:4000/api/courses";
+
+  const findAllCourses = async () => {
+    const response = await axios.get(COURSES_API);
+    setCourses(response.data);
+  };
+  useEffect(() => {
+    findAllCourses();
+  }, []);
 
   const [course, setCourse] = useState<CourseType>({
     _id: "id",
@@ -21,25 +30,22 @@ function Kanbas() {
     image: "reactjs.webp",
   });
 
-  const addNewCourse = () => {
-    setCourses([
-      ...courses,
-      { ...course, _id: new Date().getTime().toString() },
-    ]);
+  const addNewCourse = async () => {
+    const response = await axios.post(COURSES_API, course);
+    setCourses([...courses, response.data]);
   };
 
-  const deleteCourse = (courseId: string) => {
-    setCourses(courses.filter((course) => course._id !== courseId));
+  const deleteCourse = async (courseId: string) => {
+    const response = await axios.delete(`${COURSES_API}/${courseId}`);
+    setCourses(courses.filter((c) => c._id !== courseId));
   };
 
-  const updateCourse = () => {
+  const updateCourse = async () => {
+    const response = await axios.put(`${COURSES_API}/${course._id}`, course);
+
     setCourses(
       courses.map((c) => {
-        if (c._id === course._id) {
-          return course;
-        } else {
-          return c;
-        }
+        return c._id === course._id ? course : c;
       })
     );
   };
@@ -68,10 +74,7 @@ function Kanbas() {
                 />
               }
             />
-            <Route
-              path="Courses/:courseId/*"
-              element={<Courses courses={courses} />}
-            />
+            <Route path="Courses/:courseId/*" element={<Courses />} />
           </Routes>
         </div>
       </div>
