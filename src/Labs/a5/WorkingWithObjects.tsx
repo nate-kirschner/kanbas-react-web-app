@@ -1,5 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+
+const API_BASE = process.env.REACT_APP_API_BASE;
+
 function WorkingWithObjects() {
   const [assignment, setAssignment] = useState({
     id: 1,
@@ -9,7 +12,7 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
+  const ASSIGNMENT_URL = `${API_BASE}/a5/assignment`;
 
   const [module, setModule] = useState({
     id: "id",
@@ -80,16 +83,16 @@ function WorkingWithObjects() {
       />
 
       <h4>Retrieving Objects</h4>
-      <a href="http://localhost:4000/a5/assignment">Get Assignment</a>
+      <a href={`${API_BASE}/a5/assignment`}>Get Assignment</a>
       <h4>Retrieving Properties</h4>
-      <a href="http://localhost:4000/a5/assignment/title">Get Title</a>
+      <a href={`${API_BASE}/a5/assignment/title`}>Get Title</a>
 
       <h3>Module</h3>
-      <a href="http://localhost:4000/a5/module">Get Module</a>
+      <a href={`${API_BASE}/a5/module`}>Get Module</a>
       <br />
-      <a href="http://localhost:4000/a5/module/name">Get Module Name</a>
+      <a href={`${API_BASE}/a5/module/name`}>Get Module Name</a>
       <br />
-      <a href={`http://localhost:4000/a5/module/name/${module.name}`}>
+      <a href={`${API_BASE}/a5/module/name/${module.name}`}>
         Update Module Name
       </a>
       <input
@@ -97,9 +100,7 @@ function WorkingWithObjects() {
         onChange={(e) => setModule({ ...module, name: e.target.value })}
         value={module.name}
       />
-      <a
-        href={`http://localhost:4000/a5/module/description/${module.description}`}
-      >
+      <a href={`${API_BASE}/a5/module/description/${module.description}`}>
         Update Module Description
       </a>
       <input
